@@ -2,13 +2,13 @@
 
 namespace Alg.Sorting.Tests
 {
-    public partial class InsertSortTest
+    public class BaseSortTest<T> where T : ISort, new()
     {
-        private InsertSort target;
+        private readonly T target;
 
-        public InsertSortTest()
+        public BaseSortTest()
         {
-            target = new InsertSort();
+            target = new T();
         }
 
         [Theory]

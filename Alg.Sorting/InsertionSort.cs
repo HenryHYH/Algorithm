@@ -1,6 +1,9 @@
 ﻿namespace Alg.Sorting
 {
-    public partial class InsertSort
+    /// <summary>
+    /// 插入排序
+    /// </summary>
+    public partial class InsertionSort : ISort
     {
         public void Execute(ref int[] arr)
         {
