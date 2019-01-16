@@ -10,6 +10,7 @@ namespace Alg.Sorting.Tests
             yield return new object[] { new[] { 7, 6, 4, 8, 2, 3, 5, 1 }, new[] { 1, 2, 3, 4, 5, 6, 7, 8 } };
             yield return new object[] { new[] { 1, 2, 3, 4, 5, 6, 7, 8 }, new[] { 1, 2, 3, 4, 5, 6, 7, 8 } };
             yield return new object[] { new[] { 8, 7, 6, 5, 4, 3, 2, 1 }, new[] { 1, 2, 3, 4, 5, 6, 7, 8 } };
+            yield return new object[] { new[] { 5, 3, 16, 2, 10, 14 }, new[] { 2, 3, 5, 10, 14, 16 } };
         }
 
         IEnumerator IEnumerable.GetEnumerator()

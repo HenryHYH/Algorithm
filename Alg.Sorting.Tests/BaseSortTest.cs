@@ -2,7 +2,7 @@
 
 namespace Alg.Sorting.Tests
 {
-    public class BaseSortTest<T> where T : ISort, new()
+    public abstract class BaseSortTest<T> where T : ISort, new()
     {
         private readonly T target;
 
@@ -13,7 +13,7 @@ namespace Alg.Sorting.Tests
 
         [Theory]
         [ClassData(typeof(SortingTestData))]
-        public void TestSort(int[] source, int[] expected)
+        public virtual void TestSort(int[] source, int[] expected)
         {
             target.Execute(ref source);
             Assert.Equal(expected, source);
