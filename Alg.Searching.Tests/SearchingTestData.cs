@@ -7,9 +7,9 @@ namespace Alg.Searching.Tests
     {
         public IEnumerator<object[]> GetEnumerator()
         {
-            yield return new object[] { new[] { 1, 2 }, 1, 0 };
-            yield return new object[] { new[] { 1, 2 }, 2, 1 };
-            yield return new object[] { new[] { 1, 2 }, 3, null };
+            yield return new object[] { new[] { 1, 2, 4, 6, 8, 10 }, 1, 0 };
+            yield return new object[] { new[] { 1, 2, 4, 6, 8, 10 }, 2, 1 };
+            yield return new object[] { new[] { 1, 2, 4, 6, 8, 10 }, 3, null };
         }
 
         IEnumerator IEnumerable.GetEnumerator()
