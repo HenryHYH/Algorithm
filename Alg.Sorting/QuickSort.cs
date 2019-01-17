@@ -1,5 +1,8 @@
 ﻿namespace Alg.Sorting
 {
+    /// <summary>
+    /// 快速排序
+    /// </summary>
     public class QuickSort : ISort
     {
         public void Execute(ref int[] arr)

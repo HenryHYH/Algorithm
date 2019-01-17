@@ -1,5 +1,8 @@
 ﻿namespace Alg.Sorting
 {
+    /// <summary>
+    /// 选择排序
+    /// </summary>
     public class SelectionSort : ISort
     {
         public void Execute(ref int[] arr)
